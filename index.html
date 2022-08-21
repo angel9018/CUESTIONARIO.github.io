@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini cuestionario</title>
+    <link rel="stylesheet" href="preguntas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cuestionario</h1> <br>
+        <p>Pone a prueba tus conocimientos </p> </br>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>¿cual es la capital de italia ?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Turin
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Nogales
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Roma
+            </label>
+            <label>
+        </section>
+        <section id="p1">
+            <h3>¿Cual es la capital de Noruega?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Oslo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Bucarest
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onclick="respuesta(1,this)"> Madrid
+            </label>
+        </section>
+        <section id="p2">
+            <h3>¿Cuál es el principal motivo por el cual la gente se divorcia?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> por dinero
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> por infidelidad
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> por el matrimonio
+            </label>
+            <label>
+                <input type="radio" value="4" name="p2" onclick="respuesta(2,this)"> por amor
+            </label>
+        </section>
+        <section id="p3">
+            <h3>¿cual es la capital de peru?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> La paz
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Cuidad de peru
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Lima
+            </label>
+        </section>
+        <section id="p4">
+            <h3>¿que sube y nunca baja?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> la edad
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> tu autoestima
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Inflacion
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="respuesta(4,this)"> el peso
+            </label>
+        </section>
+        <section id="p5">
+            <h3>¿cual es la capital de suecia ?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> Gotembugor
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> Estomolco
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> Lund
+            </label>
+        </section>
+        <section id="p6">
+            <h3>¿mes de macimiento?</h3>
+            <label>
+                <input type="radio" value="1" name="p6" onclick="respuesta(6,this)"> Enero
+            </label>
+            <label>
+                <input type="radio" value="2" name="p6" onclick="respuesta(6,this)"> Febreo 
+            </label>
+            <label>
+                <input type="radio" value="3" name="p6" onclick="respuesta(6,this)"> Marzo
+            </label>
+            <label>
+                <input type="radio" value="4" name="p6" onclick="respuesta(6,this)"> Nobiembre
+            </label>
+        </section>
+        <section id="p7">
+            <h3>¿Cual es la capital de canada?</h3>
+            <label>
+                <input type="radio" value="1" name="p7" onclick="respuesta(7,this)"> Condberra
+            </label>
+            <label>
+                <input type="radio" value="2" name="p7" onclick="respuesta(7,this)"> Toronto
+            </label>
+            <label>
+                <input type="radio" value="4" name="p7" onclick="respuesta(7,this)"> Ottawa
+                consonante a una vocal con tan solo darle la vuelta
+            </label>
+
+        </section>
+
+        <button onclick ="corregir()">COMPROBAR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
